@@ -12,7 +12,7 @@
    ========================================================================== */
 
 html {
-  color: #222;
+  color: #222222;
   font-size: 1em;
   line-height: 1.4;
 }
@@ -26,6 +26,10 @@ html {
  *
  * Customize the background color to match your design.
  */
+
+body {
+  background: #455459;
+}
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -174,9 +178,31 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+.top-div {
+  background: #444444;
+  height: 100px;
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+}
+
+ul{
+  width: 50%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+a {
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+@media only screen and (max-width: 600px) {
+
 }
 
 @media print,
@@ -258,6 +284,7 @@ textarea {
   h2,
   h3 {
     page-break-after: avoid;
+
   }
 }
 
