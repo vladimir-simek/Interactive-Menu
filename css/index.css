@@ -10,7 +10,13 @@ a {
 }
 
 @media only screen and (max-width: 600px){
-
+  .nug a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }
 @media only screen and  (min-width: 600px){
   .top-div {
@@ -50,6 +56,21 @@ a {
 
   nav {
     height: 100%;
+  }
+
+  .eu-cookies {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: white;
+    background-color: black;
+    z-index: 1000;
+  }
+
+  .eu-cookies button {
+    background: green;
+    color: white;
   }
 
 }
